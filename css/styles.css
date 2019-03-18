@@ -350,7 +350,7 @@ footer {
 
 @media only screen and (min-width: 701px){
     .modal-content {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -429,7 +429,7 @@ footer {
 
 @media only screen and (min-width: 701px){
     .modal-content-web {
-        width: 60%;
+        width: 50%;
     }
 }
 
