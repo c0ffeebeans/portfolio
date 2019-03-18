@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laarni Santiago's Website</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h2 class="head-logo">Laarni Santiago</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="updated-resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home-hero parallax--bg">
+    <div class="container">
+      <h1 class="title parallax--box">Fine art is that in which the hand, the head, and the heart of man go together<br>
+        <span>- John Ruskin</span></h1>
+        <a href="portfolio.html" class="button button-accent">View Portfolio</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="home-about">
+
+        <div class="home-about-textbox">
+          <h1>Who am I?</h1>
+          <p>I am a desire-driven person who has been working in the industry for 3 years now. I aspire to become really good at what I do by being open to everything that I can learn from everyone, who has experience that they can share so that I may learn and grow. I make sure that I engrave all the knowledge taught to me by freely sharing them also to anyone who can benefit and grow from it. </p>
+          <p>Communicating with other people including expats will not be a challenge as I have been exposed to different personalities of people in my 5 years of working in the BPO industry. My call center experience has taught me to be flexible and patient when dealing with other people. I'm good at encouraging my team to do their best and I take initiative in leading my team whenever the situations calls it necessary.</p>
+        </div>
+
+      </section>
+    </div>
+
+    <section class="portfolio">
+      <h1>Some of my work</h1>
+
+      <!-- portfolio item 01 -->
+      <figure class="port-item">
+        <img class="myImg" src="img/port1.jpg" alt="portfolio item">
+      </figure>
+
+      <!-- portfolio item 02 -->
+      <figure class="port-item">
+        <img class="myImg" src="img/port2.png" alt="portfolio item">
+      </figure>
+
+      <!-- portfolio item 03 -->
+      <figure class="port-item">
+        <img class="myImg" src="img/port3.jpg" alt="portfolio item">
+      </figure>
+
+      <!-- portfolio item 04 -->
+      <figure class="port-item">
+        <img class="myImg" src="img/port4.jpg" alt="portfolio item">
+      </figure>
+
+      <!-- portfolio item 05 -->
+      <figure class="port-item">
+        <img class="myImg" src="img/port5.jpg" alt="portfolio item">
+      </figure>
+
+      <!-- portfolio item 06 -->
+      <figure class="port-item">
+        <img class="myImg" src="img/port6.jpg" alt="portfolio item">
+      </figure>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h1 class="title-cta title-bold">Like what you see?
+          <span>Then what are you waiting for?</span>
+        </h1>
+        <a href="updated-resume.pdf" target="_blank" class="button button-dark">Hire Me</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made by Laarni Santiago © 2019</p>
+    </footer>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+    var modal = document.getElementById('myModal');
+
+    var img = $('.myImg');
+    var modalImg = $("#img01");
+    var captionText = document.getElementById("caption");
+    $('.myImg').click(function(){
+      modal.style.display = "block";
+      var newSrc = this.src;
+      modalImg.attr('src', newSrc);
+      captionText.innerHTML = this.alt;
+    });
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+  </script>
+
+</body>
+</html>
