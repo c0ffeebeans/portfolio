@@ -281,6 +281,12 @@ footer {
 
 /* The Modal*/
 
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
 .myImg:hover {opacity: 0.7;}
 
 .modal {
@@ -306,7 +312,7 @@ footer {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, {
+.modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -385,7 +391,7 @@ footer {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content-web, {
+.modal-content-web {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
