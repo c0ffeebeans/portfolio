@@ -360,6 +360,12 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1000px){
+    .modal-content {
+        width: 60%;
+    }
+}
+
 
 /******************************/
 
@@ -436,6 +442,12 @@ footer {
 @media only screen and (min-width: 701px){
     .modal-content-web {
         width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .modal-content-web {
+        width: 30%;
     }
 }
 
