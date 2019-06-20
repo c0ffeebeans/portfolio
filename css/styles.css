@@ -167,6 +167,10 @@ nav a:hover, nav a:focus {
 	margin: 0 auto;
 }
 
+.m-2 {
+	margin: 1.5rem auto;
+}
+
 /* HEADER END */
 
 /*Home About*/
@@ -282,7 +286,7 @@ footer {
 /* The Modal*/
 
 .myImg {
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   cursor: pointer;
   transition: 0.6s;
 }
